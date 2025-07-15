@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice HTML</title>
+</head>
+
+<body>
+    <h1>Fill out this form:</h1>
+    <!-- USE GET, not POST -->
+    <!-- COMMETS COMMAND PLUS SLASH 
+     The NAME is the property-like and the VALUE is the value of what it will return the data with-->
+
+    <div>
+        <form action="#" method="get">
+            First Name <input type="text" name="firstname"><br><br>
+            Second Name <input type="text" name="secondname"><br><br>
+            Email <input type="email" required name="email"><br><br>
+            Password <input type="password" minlength="5" name="password"><br><br>
+            Birthdate <input type="date" name="birthdate"><br><br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other <br> <br>
+            Pets:<br>
+            <input type="checkbox" name="pet" value="cat">Cat <br>
+            <input type="checkbox" name="pet" value="dog">Dog <br>
+            <input type="checkbox" name="pet" value="bird">Bird <br><br>
+            House Type:<br>
+            <select name="housetype">
+                <option value="house">House</option>
+                <option selected value="apartment">Apartment</option>
+                <option value="penthouse">Penthouse</option>
+            </select><br><br>
+            <p>Write your message here:</p>
+            <textarea name="Message" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Start Over">
+        </form>
+    </div>
+    <br>
+    <hr><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>House</th>
+                <th>Pet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fran</td>
+                <td>Flat</td>
+                <td>Dog</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>E</td>
+                <td>N</td>
+                <td>D</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- HTML5 features:
+Semantic elements make websites more descriptive so they can rank your site's content in search engines
+Tags: header, nav (navigation link), footer, min (minimum value for an input field), section, article, aside
+
+EXAMPLE IN UI:
+
+<header>
+<nav>
+<aside><main>
+        <article>
+            <figure>
+            <p>
+        <section>
+<footer>-->
+    <hr>
+    <h1>SEE VIDEO!</h1>
+    <hr>
+    <!-- Tag to add video and audio -->
+    <video src="videotest.mp4" autoplay muted controls loop width="500" height="500"></video>
+    <hr>
+    <!-- To add a photo that will be the cover of the video user POSTER tag -->
+    <video src="videotest.mp4" width="300" height="200" poster="download.jpeg" controls></video>
+    <hr>
+    <audio src="#" controls></audio>
+    <hr>
+    <iframe width="700" height="700" src="https://twins.wix.com/MgwSul" frameborder="0"></iframe>
+    <hr>
+
+
+
+</body>
+
+</html>
