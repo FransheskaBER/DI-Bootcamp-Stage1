@@ -1,0 +1,248 @@
+/* selector {
+    property:value;
+} */
+
+h2 {
+    color: blueviolet;
+}
+
+p {
+    color: aqua;
+}
+
+body {
+    background-color: black;
+}
+
+li {
+    color: white
+}
+
+a {
+    color: white;
+}
+
+body {
+    background-color: white;
+}
+
+p {
+    color: blue;
+}
+
+li {
+    color: black;
+}
+
+a {
+    color: blue;
+}
+
+p {
+    color: black;
+    background-color: aqua;
+}
+
+h2 {
+    background-color: bisque;
+}
+
+ul {
+    background-color: blueviolet;
+}
+
+/* Use comma to select different "selectors" or elements from the html */
+li, a {
+    color: white;
+}
+
+/* Use the asterisk to select all elements so if you want to select all h1 or all li for example */
+* {
+    color: red;
+}
+
+* {
+    text-align: left;
+}
+
+/* Use space to select all specific tags inside a parent tag, for example if you want to select all p within a footer */
+footer p {
+    color: red;
+}
+
+/* use + to select all tags next to another tag. For example to select all p next to a h1: */
+h1+p {
+    color: red;
+}
+
+/* Use > to select direct children tags of a specifc parent. For example, to select all li children of ul parents: */
+ul > li {
+    color: red;
+}
+
+/* To select tags with specific attributes, like for example to select all a with href attributes to #, change color: */
+a[href="#"] {
+    background-color: blue;
+}
+
+/* If you want to style an element after an specific event/action then use the pseudo-class */
+/* selector:pseudo-class {
+    property: value:
+} */
+
+/* To select the first or last children of a specific parent, use: */
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: red;
+}
+
+/* Use the :nth-child() to style an element that is in a specific order/position in the container of its parents */
+/* for example I want to style il who is in the second position of the parent ul: element:nth-child(number)*/
+li:nth-child(2) {
+    color: red;
+}
+
+/* Use the :hover to style an element in its hover state */
+button {
+    color: red;
+}
+button:hover {
+    color: red;
+}
+
+/* MORE USEFUL TAGS */
+h1 {
+    text-align: center;
+    border: 5px solid;
+    background-image: url(#);
+    background-size: cover;
+/* to have a pointer or other symbol when hovering over an element like in this case h1, use cursor */
+    cursor: pointer;
+}
+
+/* to make the bullets not bullets and not numbers then use none */
+li {
+    list-style: none;
+}
+
+
+/* to make a list into a line instead of one on top of each other, use DISPLAY */
+/* block (vertical bullets) or inline-block horizontal bullets */
+p {
+    display: inline-block;
+}
+
+/* RGB (red, green, blue) or HEX */
+/* RGBA the last one is alpha A is transparent */
+
+/* the class property can be given any value in html like class="webtext" and this can be added inside any element like <p class="classtype"> Lorem </p */
+/* to select that class you do this:: */
+.class {
+    color: red;
+}
+
+/* You can add as many types of classes with space like: */
+/* <p class="webtext active"> Para </p> */
+/* to style that specific p with 2 types of classes, you do: */
+
+.active {
+    color:read-only
+}
+
+/* when you want to wrap sth into a div and add ID like <div id="div1"> ... </div> */
+#div1 {
+    color: red;
+}
+
+/* You can use ID for one element (must be unique) whereas class to many elements */
+/* If you have two elements with the same class, and want to apply the second class a different color, use: */
+/* If we have <h1 class="date"> .. </h1> and <p class="date"> .. </p */
+.date {
+    color: red;
+}
+
+p.date {
+    color: red;
+}
+
+/* TEXT AND FONT */
+h1 {
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    text-shadow: 20px;
+/* for spacing between lines vertically/horizontally */
+    line-height: 20px;
+    letter-spacing: o.5em;
+    word-spacing: 2em;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* HOW TO STYLE PROPERTIES WITH IMAGES: */
+/* for <img src="image.pge"> */
+
+img {
+    /* to put an image next to text */
+    float: right;
+}
+
+footer {
+    /* if you have an image the p will go to the left and also the.footer but if you dont want the footer to be on the left of the image but below the image use this */
+    clear: both;
+}
+
+/* BOX MODEL */
+/* To have sth inline use display:inline-block */
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    /* top right bottom left */
+    padding: 5px 20px 5px 20px;
+    margin: 0px 2opx
+    /* first come content, then padding, then border, then margin */ 
+}
+
+/* to remove a specific border within a border box use none */
+.boxmodel {
+    border-left: none;
+}
+
+
+/* to control a layout and make sure the box never gets biggers than
+specific size use border-box like: */
+div {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* to have a much wider box than expected use content-box */
+div {
+    box-sizing: content-box;
+}
+
+/* to adjust the corners of a box use border-radious */
+p {
+    border-radius: 50px
+}
+
+/* em is to say equal to like 5em means 5 times of what that another elements has like if i says 5em for span then it is eaul than 25px */
+p {
+    font-size: 10px;
+}
+
+span {
+    font-size: 5em;
+    /* this is equal to 50px is multiploe 5x10 fro the p size */
+}
+
+/* It's better to use px and not %
+use % by saying use just the 50% of the total default of the screen */
